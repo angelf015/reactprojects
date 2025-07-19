@@ -48,8 +48,55 @@ const SimpleTreeView: React.FC<{ nodes: TreeNode[] }> = ({ nodes }) => {
     );
 };
 
-// dummy data
-import { basicNodes, checkboxNodes } from './data';
+// Sample tree data
+const basicNodes: TreeNode[] = [
+    {
+        text: "Parent 1",
+        nodes: [
+            { text: "Child 1" },
+            { text: "Child 2" },
+            {
+                text: "Child 3",
+                nodes: [
+                    { text: "Grandchild 1" },
+                    { text: "Grandchild 2" }
+                ]
+            }
+        ]
+    },
+    { text: "Parent 2" },
+    {
+        text: "Parent 3",
+        nodes: [
+            { text: "Child 4" },
+            { text: "Child 5" }
+        ]
+    }
+];
+
+const checkboxNodes: TreeNode[] = [
+    {
+        text: "Documents",
+        nodes: [
+            { text: "resume.pdf" },
+            { text: "cover_letter.docx" },
+            {
+                text: "projects",
+                nodes: [
+                    { text: "project1.zip" },
+                    { text: "project2.zip" }
+                ]
+            }
+        ]
+    },
+    {
+        text: "Images",
+        nodes: [
+            { text: "photo1.jpg" },
+            { text: "photo2.png" }
+        ]
+    }
+];
 
 const TreeViewExample = () => {
     // set pagetitle
@@ -73,38 +120,25 @@ const TreeViewExample = () => {
             <Col md={6}>
                 <Card>
                     <Card.Body>
-                        <Dropdown className="float-end" align="end">
-                            <Dropdown.Toggle as="a" className="cursor-pointer card-drop">
-                                <i className="mdi mdi-dots-vertical"></i>
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item>Action</Dropdown.Item>
-                                <Dropdown.Item>Anothther Action</Dropdown.Item>
-                                <Dropdown.Item>Something Else</Dropdown.Item>
-                                <Dropdown.Item>Separated link</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                        <h4 className="header-title mt-0 mb-3">Basic Tree</h4>
-                        <DeniReactTreeView items={basicNodes} showRoot />
+                        <h4 className="header-title">Basic Example</h4>
+                        <p className="text-muted font-14">
+                            Simple tree view with expandable nodes.
+                        </p>
+
+                        <SimpleTreeView nodes={basicNodes} />
                     </Card.Body>
                 </Card>
             </Col>
+
             <Col md={6}>
                 <Card>
                     <Card.Body>
-                        <Dropdown className="float-end" align="end">
-                            <Dropdown.Toggle as="a" className="cursor-pointer card-drop">
-                                <i className="mdi mdi-dots-vertical"></i>
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item>Action</Dropdown.Item>
-                                <Dropdown.Item>Anothther Action</Dropdown.Item>
-                                <Dropdown.Item>Something Else</Dropdown.Item>
-                                <Dropdown.Item>Separated link</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                        <h4 className="header-title mt-0 mb-3">Checkbox Tree</h4>
-                        <DeniReactTreeView items={checkboxNodes} showCheckbox showRoot />
+                        <h4 className="header-title">With Files</h4>
+                        <p className="text-muted font-14">
+                            Tree view example with file structure.
+                        </p>
+
+                        <SimpleTreeView nodes={checkboxNodes} />
                     </Card.Body>
                 </Card>
             </Col>

@@ -1,9 +1,10 @@
 import SimpleBar from 'simplebar-react';
 
-type ScrollbarProps = SimpleBar.Props & {
+type ScrollbarProps = {
     className?: string;
     style?: Record<string, unknown>;
     children?: unknown;
+    [key: string]: any;
 };
 
 const Scrollbar = ({ className, style, children, ...otherProps }: ScrollbarProps) => {

@@ -78,10 +78,12 @@ const AdmintoDatepicker = (props: AdmintoDatepickerProps) => {
             {/* @ts-ignore: Type compatibility issue with Node.js 20 types and react-datepicker */}
             <DatePicker
                 calendarClassName={props.calendarClassName || 'shadow'}
+                // @ts-ignore: Type compatibility issue with Node.js 20 types and react-datepicker
                 selectsRange={props.selectsRange}
                 startDate={props.startDate}
                 endDate={props.endDate}
                 selected={props.value}
+                // @ts-ignore: Type compatibility issue with Node.js 20 types and react-datepicker
                 onChange={(date) => props.onChange(date)}
                 // @ts-ignore: Type compatibility issue with Node.js 20 types and react-datepicker
                 customInput={input}

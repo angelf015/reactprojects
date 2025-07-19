@@ -1,5 +1,6 @@
 import React from 'react';
-import Lightbox from 'react-image-lightbox';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 
 // types
 import { Image } from './types';
@@ -13,19 +14,24 @@ type LightBoxProps = {
 };
 
 const LightBox = ({ images, photoIndex, closeLightbox, moveNext, movePrev }: LightBoxProps) => {
+    const slides = images.map(image => ({
+        src: image.src,
+        title: image.caption,
+    }));
+
     return (
-        <>
-            <Lightbox
-                mainSrc={images[photoIndex].src}
-                nextSrc={images[(photoIndex + 1) % images.length].src}
-                prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
-                onCloseRequest={closeLightbox}
-                onMovePrevRequest={movePrev}
-                onMoveNextRequest={moveNext}
-                imageTitle={<p>{images[photoIndex].caption}</p>}
-                mainSrcThumbnail={images[photoIndex].caption}
-            />
-        </>
+        <Lightbox
+            open={true}
+            close={closeLightbox}
+            index={photoIndex}
+            slides={slides}
+            navigation={{
+                on: () => {
+                    moveNext();
+                    movePrev();
+                }
+            }}
+        />
     );
 };
 

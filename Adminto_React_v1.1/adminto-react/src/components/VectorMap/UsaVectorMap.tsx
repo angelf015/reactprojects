@@ -1,6 +1,6 @@
 import React from 'react';
 import 'jsvectormap';
-import 'jsvectormap/dist/maps/us-merc-en.js';
+import 'jsvectormap/dist/maps/world.js';
 
 //components
 import BaseVectorMap from './BaseVectorMap';
@@ -12,7 +12,7 @@ type UsaVectorMapProps = {
 };
 
 const UsaVectorMap = ({ width, height, options }: UsaVectorMapProps) => {
-    return <BaseVectorMap width={width} height={height} options={options} type="us_merc_en" />;
+    return <BaseVectorMap width={width} height={height} options={options} type="world" />;
 };
 
 export default UsaVectorMap;

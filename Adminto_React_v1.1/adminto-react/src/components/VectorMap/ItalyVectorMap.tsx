@@ -1,6 +1,6 @@
 import React from 'react';
 import 'jsvectormap';
-import 'jsvectormap/dist/maps/italy.js';
+import 'jsvectormap/dist/maps/world.js';
 
 //components
 import BaseVectorMap from './BaseVectorMap';
@@ -12,7 +12,7 @@ type ItalyVectorMapProps = {
 };
 
 const ItalyVectorMap = ({ width, height, options }: ItalyVectorMapProps) => {
-    return <BaseVectorMap width={width} height={height} options={options} type="italy" />;
+    return <BaseVectorMap width={width} height={height} options={options} type="world" />;
 };
 
 export default ItalyVectorMap;

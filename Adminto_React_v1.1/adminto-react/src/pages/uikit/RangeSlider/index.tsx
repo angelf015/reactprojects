@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import Nouislider from 'nouislider-react';
-import 'nouislider/distribute/nouislider.css';
+import 'nouislider/dist/nouislider.css';
 
 // hooks
 import { usePageTitle } from '../../../hooks';

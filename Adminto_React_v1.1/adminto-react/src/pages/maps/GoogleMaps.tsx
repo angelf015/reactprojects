@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useCallback } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
-import { Map, Marker, GoogleApiWrapper, InfoWindow } from 'google-maps-react';
+import { Wrapper, Status } from '@googlemaps/react-wrapper';
 
 // hooks
 import { usePageTitle } from '../../hooks';

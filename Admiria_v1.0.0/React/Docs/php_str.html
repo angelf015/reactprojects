@@ -1,0 +1,40 @@
+<!-- HTML generated using hilite.me -->
+        <div style="background: #f5f5f5; overflow:auto;width:auto;border:solid gray;border-width:0px;padding:1.6em;"><pre style="margin: 0; line-height: 125%">
+        import React, { Component } from 'react';
+        import Layout from './components/Layout/Layout';
+        import { Route,Switch } from 'react-router-dom';
+        import mainbuilder from './containers/mainbuilder/mainbuilder';
+        import { connect } from 'react-redux';
+        import { withRouter } from 'react-router-dom';
+        import AUX from './hoc/Aux_';
+
+        class App extends Component {
+
+          render() {
+            let layout = null;
+
+              layout = (
+                &lt;Layout header={this.props.header}  sidebar={this.props.sidebar} footer = {this.props.footer}  loginpage={this.props.loginpage}&gt;
+                  &lt;Switch&gt;  
+                    &lt;Route path="/" component={mainbuilder} /&gt;
+                  &lt;/Switch&gt;
+                &lt;/Layout&gt;);
+            return (
+              &lt;AUX&gt;
+                {layout}
+              &lt;/AUX&gt;
+            );
+          }
+        }
+        const mapStatetoProps = state =>{
+          return {
+             header: state.ui_red.header,
+             sidebar: state.ui_red.sidebar,
+             footer: state.ui_red.footer,
+             loginpage:state.ui_red.loginpage
+          };
+        }
+
+        export default withRouter(connect(mapStatetoProps)(App));
+
+</div>

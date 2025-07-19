@@ -1,0 +1,4 @@
+@import "../public/css/style.css";
+#chart .apexcharts-xaxis-tick {
+  display: none;
+}

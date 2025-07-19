@@ -75,6 +75,7 @@ const AdmintoDatepicker = (props: AdmintoDatepickerProps) => {
     return (
         <>
             {/* date picker control */}
+            {/* @ts-ignore: Type compatibility issue with Node.js 20 types and react-datepicker */}
             <DatePicker
                 calendarClassName={props.calendarClassName || 'shadow'}
                 selectsRange={props.selectsRange}
@@ -82,6 +83,7 @@ const AdmintoDatepicker = (props: AdmintoDatepickerProps) => {
                 endDate={props.endDate}
                 selected={props.value}
                 onChange={(date) => props.onChange(date)}
+                // @ts-ignore: Type compatibility issue with Node.js 20 types and react-datepicker
                 customInput={input}
                 timeIntervals={props.tI}
                 showTimeSelect={props.showTimeSelect}

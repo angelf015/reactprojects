@@ -2786,10 +2786,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-datepicker@^4.3.4":
-  version "4.19.6"
-  resolved "https://registry.yarnpkg.com/@types/react-datepicker/-/react-datepicker-4.19.6.tgz#3095fb3c4b38b598c7e3104d73d246c9b4eddb19"
-  integrity sha512-uH5fzxt9eXxnc+hDCy/iRSFqU2+9lR/q2lAmaG4WILMai1o3IOdpcV+VSypzBFJLTEC2jrfeDXcdol0CJVMq4g==
+"@types/react-datepicker@4.3.4":
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/@types/react-datepicker/-/react-datepicker-4.3.4.tgz#1cccf5acfb8672fce08940d1cf69e664500ea63d"
+  integrity sha512-5nTTz37KdTUgMZ1AAxztMWNtEnIMVRo8oCAEhIv0a6uUqDjvSKaMyPRpBV+8chi6f/A8wlTKJIpojpXca2dx3A==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/react" "*"
@@ -2881,13 +2881,12 @@
   dependencies:
     csstype "^3.0.2"
 
-"@types/react@^17.0.0":
-  version "17.0.87"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.87.tgz#998a5e146fbea449986d95a794c0aff47f12b6e6"
-  integrity sha512-wpg9AbtJ6agjA+BKYmhG6dRWEU/2DHYwMzCaBzsz137ft6IyuqZ5fI4ic1DWL4DrI03Zy78IyVE6ucrXl0mu4g==
+"@types/react@17.0.0":
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.0.tgz#5af3eb7fad2807092f0046a1302b7823e27919b8"
+  integrity sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==
   dependencies:
     "@types/prop-types" "*"
-    "@types/scheduler" "^0.16"
     csstype "^3.0.2"
 
 "@types/redux-saga@^0.10.5":
@@ -2908,11 +2907,6 @@
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
-
-"@types/scheduler@^0.16":
-  version "0.16.8"
-  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.8.tgz#ce5ace04cfeabe7ef87c0091e50752e36707deff"
-  integrity sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==
 
 "@types/semver@^7.3.12":
   version "7.7.0"

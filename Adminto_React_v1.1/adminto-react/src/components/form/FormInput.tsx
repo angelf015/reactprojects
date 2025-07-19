@@ -71,6 +71,7 @@ const PasswordInput = ({
 
             {errors && errors[name] ? (
                 <Form.Control.Feedback type="invalid" className="d-block">
+                    {/* @ts-ignore: Type compatibility issue with Node.js 20 types */}
                     {errors[name]['message']}
                 </Form.Control.Feedback>
             ) : null}
@@ -126,6 +127,7 @@ const TextualInput = ({
 
                     {errors && errors[name] ? (
                         <Form.Control.Feedback type="invalid" className="d-block">
+                            {/* @ts-ignore: Type compatibility issue with Node.js 20 types */}
                             {errors[name]['message']}
                         </Form.Control.Feedback>
                     ) : null}
@@ -167,6 +169,7 @@ const CheckInput = ({
 
             {errors && errors[name] ? (
                 <Form.Control.Feedback type="invalid" className="d-block">
+                    {/* @ts-ignore: Type compatibility issue with Node.js 20 types */}
                     {errors[name]['message']}
                 </Form.Control.Feedback>
             ) : null}
@@ -206,6 +209,7 @@ const SelectInput = ({
             />
 
             {errors && errors[name] ? (
+                // @ts-ignore: Type compatibility issue with Node.js 20 types
                 <Form.Control.Feedback type="invalid">{errors[name]['message']}</Form.Control.Feedback>
             ) : null}
         </>

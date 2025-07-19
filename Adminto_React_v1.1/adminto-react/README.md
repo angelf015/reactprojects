@@ -2,6 +2,29 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+
+This project requires **Node.js 20.x** or higher. Make sure you have the correct version installed:
+
+```bash
+node --version  # Should be 20.x or higher
+```
+
+## Installation
+
+To set up the project, follow these steps:
+
+1. Install dependencies:
+   ```bash
+   yarn install
+   ```
+
+2. If you encounter issues with dependencies or are switching from a different Node.js version, regenerate the `yarn.lock` file:
+   ```bash
+   rm yarn.lock
+   yarn install
+   ```
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -45,4 +68,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-# TODO: Para levantar el proyecto se necesita node version 18.14.0 y usar el yarn.lock por defecto
+## Recent Changes
+
+- **Node.js 20.x Support**: Updated project to require Node.js 20.x minimum
+- **Dependencies Updated**: Updated @types/node to ^20.0.0 for better Node.js 20 compatibility
+- **Yarn Lock**: Regenerated yarn.lock with Node.js 20 for consistent dependency resolution

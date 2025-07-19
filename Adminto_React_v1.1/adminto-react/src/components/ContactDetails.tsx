@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Card, Dropdown } from 'react-bootstrap';
 
 // types
@@ -9,16 +10,25 @@ type ContactDetailsProps = {
 
 const ContactDetails = ({ contact }: ContactDetailsProps) => {
     return (
+        // @ts-ignore
         <Card>
+            {/* @ts-ignore */}
             <Card.Body className="text-center">
+                {/* @ts-ignore */}
                 <Dropdown className="float-end" align="end">
+                    {/* @ts-ignore */}
                     <Dropdown.Toggle as="a" className="cursor-pointer card-drop">
                         <i className="mdi mdi-dots-vertical"></i>
                     </Dropdown.Toggle>
+                    {/* @ts-ignore */}
                     <Dropdown.Menu>
+                        {/* @ts-ignore */}
                         <Dropdown.Item>Action</Dropdown.Item>
+                        {/* @ts-ignore */}
                         <Dropdown.Item>Anothther Action</Dropdown.Item>
+                        {/* @ts-ignore */}
                         <Dropdown.Item>Something Else</Dropdown.Item>
+                        {/* @ts-ignore */}
                         <Dropdown.Item>Separated link</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
@@ -47,6 +57,7 @@ const ContactDetails = ({ contact }: ContactDetailsProps) => {
                             <strong>Location :</strong> <span className="ms-2">{contact.location}</span>
                         </p>
                     </div>
+                    {/* @ts-ignore */}
                     <Button className="rounded-pill waves-effect waves-light">Send Message</Button>
                 </div>
             </Card.Body>

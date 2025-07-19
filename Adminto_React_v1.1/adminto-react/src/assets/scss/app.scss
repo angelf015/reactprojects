@@ -21,6 +21,9 @@ $variable-prefix: "ct-";
 @import "light-mode";
 @import "dark-mode";
 
+// Pre-Bootstrap overrides for Sass compatibility
+@import "pre-bootstrap-overrides";
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 // Structure

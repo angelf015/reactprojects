@@ -45,4 +45,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-# TODO: Para levantar el proyecto se necesita node version 18.14.0 y usar el yarn.lock por defecto
+# TODO: Para levantar el proyecto se necesita Node version 20.x y usar el yarn.lock por defecto

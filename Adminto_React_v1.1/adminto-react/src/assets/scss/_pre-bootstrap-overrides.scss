@@ -1,0 +1,9 @@
+//
+// Pre-Bootstrap overrides for Sass compatibility
+// This file provides actual color values for variables that cause issues 
+// with newer Sass versions when using CSS custom properties
+//
+
+// Get the primary color to use as link color
+$link-color: $primary !default;
+$link-hover-color: shade-color($primary, 15%) !default;

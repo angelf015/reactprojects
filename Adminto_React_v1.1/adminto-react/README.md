@@ -70,6 +70,24 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Recent Changes
 
-- **Node.js 20.x Support**: Updated project to require Node.js 20.x minimum
-- **Dependencies Updated**: Updated @types/node to ^20.0.0 for better Node.js 20 compatibility
-- **Yarn Lock**: Regenerated yarn.lock with Node.js 20 for consistent dependency resolution
+### React 18 & Node.js 20+ Migration (Latest)
+
+- **React 18.3.1**: Updated to latest React version with new features and performance improvements
+- **Node.js 20.x Support**: Updated project to require Node.js 20.x minimum for better performance and security
+- **Modern Dependencies**: All packages updated to React 18 compatible versions
+- **Improved Type Safety**: Updated TypeScript and type definitions for better development experience
+
+### Component Updates
+
+- **Drag & Drop**: Migrated from `react-beautiful-dnd` to `@hello-pangea/dnd` for React 18 StrictMode compatibility
+- **Image Gallery**: Replaced `react-image-lightbox` with `yet-another-react-lightbox` for better React 18 support
+- **Form Wizards**: Simplified wizard components using React Bootstrap tabs (removed react-albus dependency)
+- **Tree View**: Implemented custom tree view component to replace incompatible deni-react-treeview
+- **Maps**: Updated Google Maps components with modern implementation placeholders
+
+### Technical Improvements
+
+- **New JSX Transform**: Updated to use React 18's automatic JSX runtime
+- **createRoot API**: Migrated from deprecated ReactDOM.render to createRoot for better performance
+- **Modern Hooks**: All components updated to use latest React patterns and hooks
+- **Type Compatibility**: Resolved TypeScript issues with Node.js 20+ and updated dependencies

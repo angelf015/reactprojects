@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { Row, Col, Card, Dropdown, Modal, Button } from 'react-bootstrap';
-import { Draggable, Droppable, DragDropContext, DropResult } from 'react-beautiful-dnd';
+import { Draggable, Droppable, DragDropContext, DropResult } from '@hello-pangea/dnd';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 

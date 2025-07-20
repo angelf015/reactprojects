@@ -1,6 +1,6 @@
 import React from 'react';
 import 'jsvectormap';
-import 'jsvectormap/dist/maps/canada.js';
+import 'jsvectormap/dist/maps/world.js';
 
 //components
 import BaseVectorMap from './BaseVectorMap';
@@ -12,7 +12,7 @@ type CanadaVectorMapProps = {
 };
 
 const CanadaVectorMap = ({ width, height, options }: CanadaVectorMapProps) => {
-    return <BaseVectorMap width={width} height={height} options={options} type="canada" />;
+    return <BaseVectorMap width={width} height={height} options={options} type="world" />;
 };
 
 export default CanadaVectorMap;

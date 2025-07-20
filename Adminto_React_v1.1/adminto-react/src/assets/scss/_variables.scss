@@ -408,10 +408,10 @@ $body-text-align:           null;
 //
 // Style anchor elements.
 
-$link-color:                              var(--#{$variable-prefix}link-color);
+$link-color:                              $primary;
 $link-decoration:                         none;
 $link-shade-percentage:                   15%;
-$link-hover-color:                        var(--#{$variable-prefix}link-hover-color);
+$link-hover-color:                        shade-color($primary, $link-shade-percentage);
 $link-hover-decoration:                   null;
 
 $stretched-link-pseudo-element:           after;

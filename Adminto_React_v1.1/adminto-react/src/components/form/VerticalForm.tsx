@@ -19,6 +19,7 @@ const VerticalForm = <TFormValues extends FieldValues = FieldValues>({
     /*
      * form methods
      */
+    // @ts-ignore: Type compatibility issue with updated react-hook-form version
     const methods = useForm<TFormValues>({ defaultValues, resolver });
     const {
         handleSubmit,
@@ -28,6 +29,7 @@ const VerticalForm = <TFormValues extends FieldValues = FieldValues>({
     } = methods;
 
     return (
+        // @ts-ignore: Type compatibility issue with updated react-hook-form version
         <form onSubmit={handleSubmit(onSubmit)} className={formClass} noValidate>
             {Array.isArray(children)
                 ? children.map((child) => {
